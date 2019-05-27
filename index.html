@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="text-center">
+      <div class="nav_pics"></div>
+    </nav>
+    <div class="headline text-center mb-5">
+      <h1>羅馬字與阿拉伯數字的轉換器</h1>
+    </div>
+    <form>
+      <!-- 羅馬字輸入欄位 -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">羅馬數字</span>
+        </div>
+        <input type="text" class="form-control" placeholder="請輸入羅馬字" id='roman-input'>
+      </div>
+      <br>
+      <!-- 按鈕列 -->
+      <div class="nav_icon mr-2 d-flex justify-content-between">
+        <button type="button" class='btn btn-secondary' id='clear'>
+          <i class="fas fa-trash-alt"></i>
+          清空
+        </button>
+        <button type="button" class='btn btn-secondary' id='copy'>
+          <i class="fas fa-copy"></i>
+          複製結果
+        </button>
+      </div>
+      <br>
+      <!-- 數字結果 -->
+      <div class="input-group mt-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">阿拉伯數字</span>
+        </div>
+        <input type="text" class="form-control" placeholder="請輸入阿拉伯數字" id='number-input'>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
